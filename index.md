@@ -22,14 +22,11 @@ information on your running app.
 
 ## Features
 
-* [**Easy Setup**](installing.html) - If you already have a working
-  Ruby and Cucumber setup you can have Frank setup within your iOS app
-  in minutes!
+* [**Easy Setup**](getting_started.html) - Getting your iOS app setup for Frank should take less than 10 minutes.
 * **Record Video** - record video of your test runs to show the app in action
 * **Run everywhere** - Run your tests on both the Simulator and Device
 * **Integrates with CI** - Run your tests on every checkin
-* [**Great Community**](mailing_lists.html) - A strong community of
-  helpful people
+* [**Great Community**](mailing_lists.html) - A strong community of helpful people
 
 ## Get it now
 

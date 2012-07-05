@@ -14,6 +14,8 @@ recreate a defect.
 If you start to build a large suite of tests using these steps *in
 your feature files* you will quickly find that they are trouble to
 maintain and can be brittle depending on how much your UI is changing.
+You'll be much better off if you [write your own steps](writing_steps.html)
+which communicate the language of your specific domain.
 
 There used to be a similar set of steps for testing web applications
 in that came along with the default cucumber install but they were
@@ -24,9 +26,7 @@ post](http://aslakhellesoy.com/post/11055981222/the-training-wheels-came-off)
 on why using steps isn't a great long-term strategy, along with some
 suggested improvements (including abstracting out the business logic,
 having conversations around the requirements, moving the steps to ruby
-where it can be refactored). We're eventually going to have more
-details on this (hopefully what I'm writing here is making sense) but
-for now it is just [Coming Soon](coming_soon.html).
+where it can be refactored). 
 
 These steps are all defined in the Frank Gem in
 [Frank/gem/lib/frank-cucumber/core_frank_steps.rb](http://github.com/moredip/Frank/blob/master/gem/lib/frank-cucumber/core_frank_steps.rb)
