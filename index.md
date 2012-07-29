@@ -7,6 +7,10 @@ title: Painless iOS Testing With Cucumber
 tests/requirements (using [Cucumber](http://www.cukes.info)) and have
 them execute against your iOS application.
 
+<iframe src="http://player.vimeo.com/video/21860134" width="500" height="281" frameborder="0" webkitAllowFullScreen="webkitAllowFullScreen" mozallowfullscreen="mozallowfullscreen" allowFullScreen="allowFullScreen">
+
+</iframe>
+
 An example acceptance test:
 {% highlight gherkin %}
 Feature: Login to the app
