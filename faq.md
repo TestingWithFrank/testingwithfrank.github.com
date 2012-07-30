@@ -26,3 +26,18 @@ Yes, people have this working, but it hasn't been documented very well. Ask on t
 
 ## How can I automate filling out a text field using the keyboard?
 Recent releases of Frank have a [type_into_keyboard](http://rdoc.info/github/moredip/Frank/Frank/Cucumber/KeyboardHelper#type_into_keyboard-instance_method) method.
+
+
+## How should I set up this APP_BUNDLE_PATH thing that Frank is complaining to me about?
+
+If you're using `frank setup` and `frank build` then you shouldn't have to worry about APP_BUNDLE_PATH at all - the default value should be set correctly.
+If you're setting up your Frankified build by hand then you do need to set up your APP_BUNDLE_PATH as part of that.
+
+You need to set APP_BUNDLE_PATH to point to the location of your Frankified app bundle (the directory that ends in .app).
+One easy approach is to generate a file containing the APP_BUNDLE_PATH as part of your Frankified xcode build. 
+Specifically, you can add a 'run script' build step to your Xcode target's build setup which contains:
+
+`echo APP_BUNDLE_PATH=\"$BUILT_PRODUCTS_DIR/$EXECUTABLE_NAME.app\" > $SRCROOT/Frank/features/support/bundle_path.rb`
+
+That generates a support/bundle_path.rb file ever time you build which sets APP_BUNDLE_PATH to the location of the app bundle which XCode just built. 
+Cucumber will by default automagically import anything in that support dir, so it will load that file and make the valid_APP_BUNDLE_PATH value for Frank to use.
