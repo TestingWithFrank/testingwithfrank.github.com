@@ -5,7 +5,7 @@ title: View Selectors
 
 <style>
 img {
-  width: 600px;
+  max-width: 600px;
 }
 </style>
 
@@ -19,34 +19,37 @@ a view selector consists of a sequence of selection fragments, seperated by spac
 
 ## Selecting a view based on its accessibility label
 `view marked:'Milk'`
-<img src="/images/view_selectors/Screen Shot 2012-08-11 at 11.53.21 AM.png"/>
+
+<img src="/images/view_selectors/example6.png"/>
 
 ## Selecting a view based on its class
-`view:'UITableViewCell'` selects all views of class UITableViewCell
-<img src="/images/view_selectors/Screen Shot 2012-08-11 at 12.51.16 PM.png"/>
+`view:'UITableViewCell'` selects all views of class UITableViewCell.
+
 
 You can also use a shorthand for commonly used classes:
-`tableViewCell` also selects all views of class UITableViewCell
-<img src="/images/view_selectors/Screen Shot 2012-08-11 at 11.51.21 AM.png"/>
+`tableViewCell` is the same as writing `view:'UITableViewCell'` 
+
+<img src="/images/view_selectors/example2.png"/>
 
 ## Selecting subviews
 `tableViewCell label` selects all UILabels within UITableViewCells
-<img src="/images/view_selectors/Screen Shot 2012-08-11 at 11.51.48 AM.png"/>
+
+<img src="/images/view_selectors/example3.png"/>
 
 ## Selecting subviews based on class and accessibility label
 `tableViewCell label marked:'Milk'` selects all UILabels with an accessibility label of 'Milk' within a UITableViewCell
-<img src="/images/view_selectors/Screen Shot 2012-08-11 at 11.52.22 AM.png"/>
+
+<img src="/images/view_selectors/example4.png"/>
 
 ## Pivoting to select a parent of a view
 `tableViewCell label marked:'Milk' parent tableViewCell`
-<img src="/images/view_selectors/Screen Shot 2012-08-11 at 12.08.39 PM.png"/>
+
+<img src="/images/view_selectors/example11.png"/>
 
 ## selecting cousins of a view
 `tableViewCell label marked:'Milk' parent tableViewCell view:'UIImageView' marked:'small-check'`
-<img src="/images/view_selectors/Screen Shot 2012-08-11 at 12.09.07 PM.png"/>
+
+<img src="/images/view_selectors/example12.png"/>
 
 
 
-
-
-<img src="/images/view_selectors/.png"/>
