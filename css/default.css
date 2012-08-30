@@ -242,7 +242,6 @@ ol.toc li ol.toc {
   border: none;
 }
 #content .footnote sup { font-weight: bold; }
-
 #content .footnote-links dt { font-weight: bold; }
 #content .footnote-links dt:after { content: ": " }
 #content .footnote-links dd { }
@@ -279,6 +278,3 @@ ol.toc li ol.toc {
   right: 20px;
   width: 100px;
 }
-
-
-
