@@ -16,7 +16,7 @@
 
 
 body {
-  background-color: #fff;
+  background-image: url('/images/fabric.png');
   color: #000;
   font-family: "Helvetica Neue", "DejaVu Sans", "Verdana", sans-serif;
   text-align: center;
@@ -24,7 +24,7 @@ body {
 }
 
 a:link, a:visited{
-  color: #0044b3;
+  color: #c63052;
   text-decoration: none;
 }
 
@@ -39,30 +39,34 @@ img {
 pre, code {
   font-family: "Monaco", "DejaVu Sans Mono", "Courier New", "Courier";
   font-size: small;
-  background-color: #E8E8E8;
+  background-color: #222;
+  color: #fff;
 }
 pre {
   margin: 0.3em 0 0.3em 0.9em;
-  padding: 0;
+  padding: 20px 30px;
   line-height: 1.8em;
   white-space: pre-wrap;       /* css-3 */
   white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+  -moz-box-shadow: inset 0 0 5px 5px rgba(0, 0, 0, .7);
+  -webkit-box-shadow: inset 0 0 5px 5px rgba(0, 0, 0, .7);
+  box-shadow: inset 0 0 5px 5px rgba(0, 0, 0, .7);
 }
 pre br { display: none; }
 
 h1, h2, h3 {
-  font-family: "Gill Sans";
+  font-family: Helvetica;
   padding: 0;
   margin: 1.6em 0 0.6em 0;
   line-height: 1.25em;
   letter-spacing: 0.03em;
+  color: #000;
 }
 
 h1 {
   font-size: 2em;
   margin-top: 0;
   padding-bottom: 0.3em;
-  border-bottom: 1px solid #808080;
 }
 
 h2 {
@@ -114,15 +118,28 @@ th, thead td {
 
 
 #wrap{
-  margin: 1em auto 2em auto;
+  margin: 0 auto;
   text-align: left;
-  width: 65em;
+  width: 70em;
+  background-color: rgba(225, 220, 220, 1);
+  -moz-box-shadow: 0px 6px 10px rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, .8);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, .8);
 }
 
 
 #header {
-  margin: 0 0 3em 18em;
+  margin: 0 auto;
+  padding: 40px;
   position: relative;
+  text-align: left;
+  font-family: 'Love Ya Like A Sister', cursive;;
+  font-size: 4em;
+  color: #c63052;
+  background-color: #222;
+  -moz-box-shadow: 1px 2px 6px rgba(0, 0, 0, .9);
+  -webkit-box-shadow: 1px 2px 6px rgba(0, 0, 0, .9);
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, .9);
 }
 
 #header .tagline {
@@ -134,16 +151,16 @@ th, thead td {
   right: 0;
 }
 
-
 #pages { /* Parent Wrapper for inside boxes */
 /*  display: inline; */ /* IE Hack */
-  width: 12em;
+  width: 14em;
   float: left;
   margin-right: 2em;
-  font-size: 11pt;
+  font-size: 14pt;
   text-align: right;
   border-right: 1px solid #ccc;
-  padding-right: 2em;
+  padding-right: 1em;
+  padding-top: 20px;
 }
 #pages ol {
   list-style: none;
@@ -152,7 +169,7 @@ th, thead td {
 }
 #pages ol li {
   padding: 0.3em 0 0.6em 0em;
-  color: #669966;
+  color: #c63052;
   font-weight: bold; 
 }
 #pages ol li ol {
@@ -174,14 +191,19 @@ th, thead td {
   color: #000;
   vertical-align: middle;
 }
+#pages a{
+  text-decoration: none;
+  color: rgba(80, 75, 78, 1);
+}
 
 
 #content { /* Parent Wrapper for inside boxes */
 /*  display: inline; *//* IE Hack */
   float: left;
-  width: 44em;
+  width: 40em;
   margin-left: 0.3em;
   margin-bottom: 5em;
+  padding: 20px;
   word-wrap: break-word; /* prevents container divs from wrapping */
 }
 
@@ -220,18 +242,39 @@ ol.toc li ol.toc {
   border: none;
 }
 #content .footnote sup { font-weight: bold; }
-
 #content .footnote-links dt { font-weight: bold; }
 #content .footnote-links dt:after { content: ": " }
 #content .footnote-links dd { }
 
 
 #footer {
-  color: #888;
-  border-top: 1px solid #ccc;
-  font-size: 0.9em;
-  padding: 0.3em;
+  position: relative;
+  background-color: #222;
+  color: #fff;
+  padding: 1em 2em;
   margin: 2em 0 3em 0em;
   clear: both;
   text-align: right;
+  height: 70px;
+}
+
+#TWLogo{
+  position: absolute;
+  top: 40%;
+  left: 20px;
+  width: 200px;
+}
+
+#githubLogo{
+  position: absolute;
+  top: 15%;
+  right: 120px;
+  width: 80px;
+}
+
+#buildrLogo{
+  position: absolute;
+  top: 25%;
+  right: 20px;
+  width: 100px;
 }
