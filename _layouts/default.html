@@ -6,6 +6,7 @@
     <style type='text/css'>
       @import 'css/default.css';
       @import 'css/syntax.css';
+      @import url(http://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister);
     </style>
     <meta content='Official Frank documentation from the people in the know, v2' name='subject'>
     <link href='images/favicon.png' rel='shortcut icon'>
@@ -30,7 +31,7 @@
   <body>
     <div id='wrap'>
       <div id='header'>
-        <a href='index.html' title="Testing With Frank"><img alt='testing with frank' src='images/testing_with_frank.png'></a>
+        Testing With Frank
       </div>
       <div id='pages'>
         <ol class='toc'>
@@ -64,9 +65,13 @@
         <h1 id='{{ page.title | downcase | replace(' ', '_') }}'>{{ page.title }}</h1>
         {{ content }}
       </div>
-      <div id='footer'>Testing With Frank<br/>
-        <p>Github: <a href="http://github.com/moredip/Frank">http://github.com/moredip/Frank</a></p>
-        <p>Site design from <a href="github.com/apache/buildr">Apache Buildr project </a></p></div>
+
+      <div id='footer'>
+        <a href="http://www.thoughtworks.com/"><img id="TWLogo" src="/images/TWLogo.png"/></a>
+        <a href="http://buildr.apache.org/"><img id="buildrLogo" src="/images/buildr.png"/></a>
+        <a href="http://github.com/moredip/Frank"><img id="githubLogo" src="/images/octocat.png"/></a>
+        
+      </div>
     </div>
   </body>
 </html>
