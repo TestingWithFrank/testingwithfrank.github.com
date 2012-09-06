@@ -41,6 +41,7 @@ pre, code {
   font-size: small;
   background-color: #222;
   color: #fff;
+  padding: 2px 6px;
 }
 pre {
   margin: 0.3em 0 0.3em 0.9em;
@@ -64,7 +65,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 1.8em;
   margin-top: 0;
   padding-bottom: 0.3em;
 }
@@ -142,12 +143,11 @@ th, thead td {
   box-shadow: 1px 2px 6px rgba(0, 0, 0, .9);
 }
 
-#header .tagline {
-  float: right;
-  font-size: 1.2em;
-  font-weight: bold;
+
+#frankLogo{
+  width: 250px;
   position: absolute;
-  top: 0.6em;
+  top: 0;
   right: 0;
 }
 
@@ -155,7 +155,7 @@ th, thead td {
 /*  display: inline; */ /* IE Hack */
   width: 14em;
   float: left;
-  margin-right: 2em;
+  margin-right: .5em;
   font-size: 14pt;
   text-align: right;
   border-right: 1px solid #ccc;
@@ -254,27 +254,19 @@ ol.toc li ol.toc {
   padding: 1em 2em;
   margin: 2em 0 3em 0em;
   clear: both;
-  text-align: right;
+  text-align: center;
   height: 70px;
 }
 
 #TWLogo{
-  position: absolute;
-  top: 40%;
-  left: 20px;
+  margin-top: 24px;
   width: 200px;
 }
 
 #githubLogo{
   position: absolute;
-  top: 15%;
-  right: 120px;
-  width: 80px;
+  top: 0;
+  right: 0;
+  width: 115px;
 }
 
-#buildrLogo{
-  position: absolute;
-  top: 25%;
-  right: 20px;
-  width: 100px;
-}
