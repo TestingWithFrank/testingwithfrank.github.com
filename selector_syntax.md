@@ -6,7 +6,7 @@ title: View Selectors
 ## Introduction
 A key part of automating a UI is specifying specific UI elements. Once you've specified specific elements you can simulate actions against (e.g. tapping or swiping) or you can inspect the state of them (e.g. checking the value of a label or whether button is enabled).
 
-In web application automation you would usually use CSS or XPath selectors to select parts of your UI. With Frank you have a similar choice of selector engines. The default is an engine called Shelley, which implements a syntax inherited from UISpec.
+In web application automation you would usually use CSS or XPath selectors to select parts of your UI. With Frank you have a similar choice of selector engines. The default is an engine called Shelley, which implements a syntax inherited from UISpec.  (You can also install and use other selector syntaxes, such as [Igor](igor_query_syntax.html).)
 
 We'll describe the selector syntax that Shelley supports by providing examples of selectors and what they select. We'll be selecting views from an open-source application called [Cheddar](https://github.com/nothingmagical/cheddar-ios).
 
