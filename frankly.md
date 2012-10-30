@@ -12,17 +12,16 @@ processing the response. Request and response bodies may contain JSON
 (where appropriate) describing the operation to be performed or the
 results of that operation respectively.
 
-## UIQuery paths
+## View selectors
 
 An essential part of driving a UI is specifying a subset of UI
-elements to act upon. Internally the Frank driver uses UISpec to
-select a subset of elements, taking advantage of the UIQuery DSL which
-is embedded in UISpec. A client driver supplies a UIQuery path in
-order to specify a subset of elements.
+elements to act upon. Internally the Frank driver uses a *selector engine* to
+select a subset of elements. *Shelley* is the default selector engine that comes with Frank
+by default, but you can also plug in other third-party engines.
 
-You can check out the [UISpec
-documentation](http://code.google.com/p/uispec/wiki/Documentation) for
-more info on UIQuery, and on UISpec in general.
+When a client driver wants to act upon a set of views it sends a *view selector* and a *selector engine* to the server. The view selector is a string representing the selector itself, and the selector engine is just a string telling the Frank server which selector engine to use.
+
+There is more information about how view selectors and view selection engines work [here](/selector_syntax.html).
 
 ## Response format
 
@@ -65,6 +64,7 @@ applying that operation to the path. For example:
 		
     {
       'query': 'tableViewCell marked:\'Touch Me!\'',
+      'selector_engine': 'shelley_compat',
       'operation': {
         'method_name': 'touch',
         'arguments': []
@@ -80,7 +80,7 @@ element was successfully applied to exactly 1 element.
 If the driver fails to apply the specified operation to an selected
 element then it will place a null in the returned array.
 
-If the driver supplies an invalid UIQuery path then a standard error
+If the driver supplies an invalid view selector then a standard error
 response will be returned. However if the driver supplies an invalid
 *operation* then the server may simply fail to apply the operation to
 each selected element, returning an array filled with nulls, equal to
