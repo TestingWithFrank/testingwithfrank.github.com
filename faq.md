@@ -14,6 +14,12 @@ compile or link the Frank server into the application you are testing.
 ## Can I use Frank to test web-based apps?
 If you want to test a pure web app (no native code at all) then Frank can't help you, but [the WebDriver project's iPhoneDriver](http://code.google.com/p/selenium/wiki/IPhoneDriver) is a good option. If you have a hybrid app (a Native app which uses web views to implement some of the UI) then Frank does have some functionality to inspect the state of a web view, and evaluate javacript, but it's fairly basic for now.
 
+## Can I use Frank to test RubyMotion apps?
+You sure can! [Here's a handy blog post](http://calebcohoon.blogspot.com.au/2012/06/test-rubymotion-apps-using-cucumber.html) to get you started.
+
+## Can I use Frank to test MonoTouch apps?
+You sure can! [Here's a handy blog post](http://www.alejandrobeiderman.com/2012/11/setting-up-frank-with-monotouch/) to get you started.
+
 ## Can I use Frank to execute arbitrary code in my app as part of a test?
 
 Yes. Frank exposes an [app_exec](http://rdoc.info/github/moredip/Frank/Frank/Cucumber/FrankHelper#app_exec-instance_method) command which you can use to execute
