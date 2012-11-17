@@ -8,8 +8,23 @@ asked on the [frank-discuss mailing list](mailing_lists.html)!
 
 ## Can I use Frank to test an app that I haven't built myself?
 
-No sorry. In order to test an application with Frank you need to
+No, sorry. In order to test an application with Frank you need to
 compile or link the Frank server into the application you are testing.
+
+## How can I debug my Frankified app in XCode
+
+Aki Koskinen [posted this solution](https://groups.google.com/d/msg/frank-discuss/NlN7kb4iUB4/yKm_IV7MBRQJ) on the frank-discuss mailing list:
+
+In this solution the Frankified application isn't built with Xcode so no changes are needed to any of the build settings of the project in Xcode. Instead the Frankified.app that 'frank build' makes is used directly. So the first step is to build your Frankified.app the usual way with 'frank build'.
+
+Next, create a new scheme in Xcode. The "New Scheme..." item can be found from the "Product" menu for example. In the presented dialog choose "None" as the "Target" and give your scheme a name. Press OK.
+
+In the next dialog make sure "Run" is selected in the left pane (it's probably selected by default) and the "Info" tab is selected in the center of the dialog. Choose "Other..." in the "Executable" dropdown and navigate to your Frankified.app and select it. If all goes well Xcode should now change the "Destination" selection in the upper part of the dialog to an iOS simulator of some kind. I just experienced a moment ago that Xcode didn't do this but restarting Xcode got it behaving again.
+
+Basically this is all that is needed but you can off course tune other settings in the scheme as you wish. Press OK in the end.
+
+Running the Frankified app is now as easy as selecting the newly created scheme and pressing the run button.
+
 
 ## Can I use Frank to test web-based apps?
 If you want to test a pure web app (no native code at all) then Frank can't help you, but [the WebDriver project's iPhoneDriver](http://code.google.com/p/selenium/wiki/IPhoneDriver) is a good option. If you have a hybrid app (a Native app which uses web views to implement some of the UI) then Frank does have some functionality to inspect the state of a web view, and evaluate javacript, but it's fairly basic for now.
