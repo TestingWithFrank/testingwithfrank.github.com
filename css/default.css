@@ -88,7 +88,7 @@ blockquote {
   font-style: italic;
 }
 
-ul { 
+ul {
   list-style-type: disc;
 }
 
@@ -133,7 +133,7 @@ th, thead td {
   margin: 0 auto;
   padding: 40px;
   position: relative;
-  text-align: left;
+  text-align: center;
   font-family: 'Love Ya Like A Sister', cursive;;
   font-size: 4em;
   color: #c63052;
@@ -145,11 +145,19 @@ th, thead td {
 
 
 #frankLogo{
-  width: 250px;
+  width: 220px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+
+#forkme{
+  width: 125px;
   position: absolute;
   top: 0;
   right: 0;
 }
+
 
 #pages { /* Parent Wrapper for inside boxes */
 /*  display: inline; */ /* IE Hack */
@@ -170,7 +178,7 @@ th, thead td {
 #pages ol li {
   padding: 0.3em 0 0.6em 0em;
   color: #c63052;
-  font-weight: bold; 
+  font-weight: bold;
 }
 #pages ol li ol {
   margin-top: 0.3em;
@@ -228,7 +236,7 @@ ol.toc li ol.toc {
 }
 #content p.tip { background: url("../images/tip.png") 0 0 no-repeat; }
 #content p.note { background: url("../images/note.png") 0 0 no-repeat; }
- 
+
 #content .footnote {
   margin-top: 2.5em;
 }
