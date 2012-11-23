@@ -3,8 +3,8 @@ layout: default
 title: Frequently Asked Questions
 ---
 
-In an unusual twist, these are actually questions that are frequently
-asked on the [frank-discuss mailing list](mailing_lists.html)!
+In an unusual twist, these are actually **questions** that are **frequently
+asked** on the [frank-discuss mailing list](mailing_lists.html)!
 
 ## Can I use Frank to test an app that I haven't built myself?
 
