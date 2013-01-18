@@ -3,16 +3,15 @@ layout: default
 title: Contributor License Agreement
 ---
 
-## what's this all about then?
+## What's this all about then?
 
-By agreeing to the CLA, you are saying that you give ThoughtWorks (a major sponsor of Frank development) permission to distribute your contributions (or the contributions of your organization's employees) under the terms of ThoughtWorks' choice.  You are also promising that you have the necessary rights to give ThoughtWorks this permission.  In return for this, ThoughtWorks is promising to you that if it distributes your contributions, ThoughtWorks will distribute them under an OSI-approved open source license.  The CLA also says that you do not make any warranties or have any support obligations regarding your contributions.
+By agreeing to this Contributor License Agreement (CLA), you are saying that you give ThoughtWorks (a major sponsor of Frank development) permission to distribute your contributions (or the contributions of your organization's employees) under the terms of ThoughtWorks' choice.  You are also promising that you have the necessary rights to give ThoughtWorks this permission.  In return for this, ThoughtWorks is promising to you that if it distributes your contributions, ThoughtWorks will distribute them under an OSI-approved open source license.  The CLA also says that you do not make any warranties or have any support obligations regarding your contributions.
 
-## the Legal Stuff
+## The legal stuff
 
-This CONTRIBUTOR LICENSE AGREEMENT (“Agreement”) dated as of
-_____________, 201_, by and between ThoughtWorks, Inc. (“ThoughtWorks”), with offices at
-200 E. Randolph Street, 25th Floor, Chicago, Illinois 60601, and _______________ (the
-“Contributor”), having an address at _____________________________________________.
+This CONTRIBUTOR LICENSE AGREEMENT (“Agreement”) by and between ThoughtWorks, Inc. (“ThoughtWorks”), with offices at
+200 E. Randolph Street, 25th Floor, Chicago, Illinois 60601, and you (the
+“Contributor”).
 
 This Agreement is a modified version and mashup of the Apache Individual Contributor License
 Agreement and the Apache Corporate CLA. \[Respect.\]
@@ -128,23 +127,10 @@ date first set forth above.
 THOUGHTWORKS, INC.<br/>
 
 By: Rebecca Parsons <br/>
-Title: Chief Technology Officer <br/>
+Title: Chief Technology Officer<br/>
 Signed: /Rebecca Parsons/
 
 </p>
-<p>
-CONTRIBUTOR<br/>
-
-______________________________<br/>
-
-______________________________
-</p>
-
-
-Schedule A (Name of organization, point of contact (should be a real human being) and list of
-designated employees, if the Contributor is an organization)
-
-Schedule B (Identification of optional concurrent software grant, if applicable)
 
 ## Let's do this!
 If you're OK with the above then fill in the form below.
