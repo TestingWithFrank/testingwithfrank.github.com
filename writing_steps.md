@@ -15,6 +15,6 @@ that boilerplate into a new .rb file inside `features/step_definitions/`.
 Now all you need to do is fill out that step definition block with the frank-cucumber commands you need to make that step a reality.
 Most of your step definition code is going to consist of calls to frank helper methods. This helper methods will do the heavy lifting
 for you of requesting certain automation actions to be carried out on your app or of checking that the state of your app meets your expectations.
-The helper methods are documented [here](http://rdoc.info/github/moredip/Frank/Frank/Cucumber/FrankHelper).
+The helper methods are documented [here](http://rdoc.info/gems/frank-cucumber/Frank/Cucumber/FrankHelper).
 
 For more guidance on this topic, take a look at [this article](http://blog.thepete.net/blog/2012/06/24/writing-your-first-frank-test/). The second half of that article give some more detailed examples of how to write your own step definitions.
