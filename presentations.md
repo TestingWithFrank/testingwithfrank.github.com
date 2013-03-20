@@ -4,6 +4,7 @@ title: Presentations
 ---
 A few presentations that have been given on Frank:
 
+### [Video](http://skillsmatter.com/podcast/agile-testing/behavior-driven-testing-for-multichannel-enterprise-application) from a talk about testing multiple mobile platform using Frank along with other tools. Very valuable ideas here.
 ### [Slides from Pete Hodgson's CocoaConf PDX presentation - 'Beyond UIAutomation'](https://speakerdeck.com/phodgson/beyond-uiautomation)
 ### [Video](http://www.youtube.com/watch?v=BSxCSmrJc2M&feature=plcp) and [Slides](https://speakerdeck.com/phodgson/cross-platform-testing-mobile-test-summit-sf) from Pete Hodgson's Mobile Testing Summit presentation - 'Cross-platform testing'
 ### [Pete Hodgson's tech talk for Pivotal](http://bit.ly/L1516a)
