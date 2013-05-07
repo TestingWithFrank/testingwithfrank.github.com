@@ -42,11 +42,44 @@ any method which your app delegate implements.
 
 ## Can I automate a physical device using Frank.
 
-Yes, people have this working, but it hasn't been documented very well. Ask on the [mailing list](mailing_lists.html) for more details.
+Yes. Read all about it [here](device.html).
 
 
 ## How can I automate filling out a text field using the keyboard?
 Recent releases of Frank have a [type_into_keyboard](http://rdoc.info/github/moredip/Frank/Frank/Cucumber/KeyboardHelper#type_into_keyboard-instance_method) method.
+
+## My tests are failing to interact with some UI, but when I try the same thing manually everything works. What gives?
+
+It's possible that you have a race condition in your test. This issue is quite well described by [this blog post](http://sauceio.com/index.php/2011/04/how-to-lose-races-and-win-at-selenium/) (the post talks about Selenium tests, but the problem and solution translate to Frank).
+
+An easy way to verify whether you are seeing a race condition is to **temporarily** add a short pause in your test just before the interaction which is failing. This would give the app code time to 'win' the race condition. If that solves the issue then you do indeed have a race condition. If it doesn't solve the issue then probably something else is going on.
+
+You should **not leave any sleep(...) calls in your tests** after doing this experiment. The right way to solve race conditions is to use spin asserts, as described in the blog post referenced above. Let's see what that means with a concrete example. Imagine you have the following step but it is sometimes failing to tap a button:
+
+{% highlight ruby %}
+    When(/^I tap on the login button$/) do
+      touch "button marked:'login'"
+    end
+{% endhighlight %}
+
+you can first verify that this isn't working due to a race condition by changing the step definition to:
+{% highlight ruby %}
+    When(/^I tap on the login button$/) do
+      sleep 5
+      touch "button marked:'login'"
+    end
+{% endhighlight %}
+
+if that does solve the issue then you should then replace the hardcoded sleep with a spin assert:
+{% highlight ruby %}
+    When(/^I tap on the login button$/) do
+      selector = "button marked:'login'"
+      wait_until_element_exists( selector )
+      touch( selector )
+    end
+{% endhighlight %}
+
+Now your test will wait until the button is ready to be tapped (and not any longer), and then tap it.
 
 
 ## How should I set up this APP_BUNDLE_PATH thing that Frank is complaining to me about?
