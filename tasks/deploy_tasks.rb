@@ -1,9 +1,9 @@
-require_relative 'deployer'
+require 'microstatic'
 
 PREVIEW_AWS_BUCKET = "preview.testingwithfrank.com"
-PRODUCTION_AWS_BUCKET = "preview.testingwithfrank.com"
+PRODUCTION_AWS_BUCKET = "preview.testingwithfrank.com" # NOT CONFIDENT QUITE YET
 
-def load_aws_creds
+def aws_creds
   {
     :access_key_id => ENV.fetch('AWS_ACCESS_KEY_ID'),
     :secret_access_key => ENV.fetch('AWS_SECRET_ACCESS_KEY')
@@ -11,9 +11,9 @@ def load_aws_creds
 end
 
 def deploy_to_bucket(bucket)
-  deployer = S3Deployer.new( load_aws_creds, bucket )
   public_dir = File.expand_path("../../public",__FILE__)
-  deployer.upload_dir( public_dir )
+  deployer = Microstatic::S3Deployer.new( public_dir, bucket, aws_creds )
+  deployer.upload
 end
 
 desc "deploy to production"
