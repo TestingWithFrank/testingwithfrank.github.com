@@ -1,8 +1,19 @@
+---
 language: ruby
-rvm: 
-  - 1.9.3
-
+rvm:
+- 1.9.3
 script:
-  - "rake generate"
-  - "rake deploy"
+- rake generate
+- rake deploy
+env:
+  global:
+  - secure: ! 'EShtaDZJGtAPbrx7yzNEaXw+pLvOfyMklloEgLa9mvRtniYGXF9iQjcUYSvq
 
+      bc0+LpN9f4cBnwR/7SNsF9+LmlxXdOo+s+VwP0TxcI2yCBypfDKHWsqiYOgp
+
+      Yn+kwwrUcjZ+Chml8HRzCzdQga8PzB08p0UhQhdO1cySorIUt8M='
+  - secure: ! 'VTFDU+N0PWcuL97i09BloaoqOb03XbfY38zDcmrR57AAgPeh9h02/TYxoSwQ
+
+      VTiih/lbLgsXkJswud2otowtDISMsqHVyDquRY0qvd2RJkq3+zuSiZITVasb
+
+      xmJb2NUVYJwN8m0qDx3L1W2eXk/YlpUFTJjHbHeo7PSVX4AnFDU='
