@@ -2,10 +2,7 @@ language: ruby
 rvm: 
   - 1.9.3
 
-before_install:
-  - "bundle install"
-
-install:
+script:
   - "rake generate"
   - "rake deploy"
 
