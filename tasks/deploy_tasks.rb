@@ -1,4 +1,4 @@
-require 'microstatic'
+require 'microstatic/rake'
 
 PREVIEW_AWS_BUCKET = "preview.testingwithfrank.com"
 PRODUCTION_AWS_BUCKET = "preview.testingwithfrank.com" # NOT CONFIDENT QUITE YET
@@ -16,8 +16,19 @@ def deploy_to_bucket(bucket)
   deployer.upload
 end
 
-desc "deploy to production"
-task :deploy do
-  deploy_to_bucket(PRODUCTION_AWS_BUCKET)
-end
+namespace :deploy do
+  source_dir = File.expand_path("../../public",__FILE__)
 
+
+  desc "deploy to production"
+  Microstatic::Rake.s3_deploy_task( :prod ) do |task|
+    task.source_dir = source_dir
+    task.bucket_name = PRODUCTION_AWS_BUCKET
+  end
+
+  desc "deploy to preview"
+  Microstatic::Rake.s3_deploy_task( :preview ) do |task|
+    task.source_dir = source_dir
+    task.bucket_name = PREVIEW_AWS_BUCKET
+  end
+end

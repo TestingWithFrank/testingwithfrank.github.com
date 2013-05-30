@@ -23,8 +23,11 @@ GEM
     liquid (2.2.2)
     maruku (0.6.0)
       syntax (>= 1.0.0)
+    microstatic (0.2.0)
+      aws-s3 (~> 0.6.3)
     mime-types (1.23)
     posix-spawn (0.3.6)
+    rake (10.0.4)
     syntax (1.0.0)
     xml-simple (1.1.2)
 
@@ -32,6 +35,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  aws-s3 (~> 0.6.3)
   jekyll (= 0.11.0)
   liquid (~> 2.2.2)
+  microstatic (~> 0.2.0)
+  rake
