@@ -1,0 +1,2 @@
+destination: public
+exclude: ["public","Gemfile","Gemfile.lock","CNAME","Rakefile","tasks"]
