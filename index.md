@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Painless iOS Testing With Cucumber
+title: Painless iOS and Mac Testing With Cucumber
 ---
 
 **Frank** allows you to write structured text test/acceptance
