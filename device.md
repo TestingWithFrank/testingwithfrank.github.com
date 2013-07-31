@@ -27,19 +27,19 @@ You can use xcodebuild on the command line to do this.  If you have multiple tar
 Fruitstrap will install the app to the device and launch it using gdb. Make sure your provisioning includes your device or it will fail on the verification step; and that you have proper code-signing certs in your Xcode.  Delete your previous build first to verify that it actually loaded.
 
 Preparation:
-symlink: /Users/[user_dir_name]/Library/Developer/Xcode/iOS DeviceSupport/6.1.x (xxx)/DeveloperDiskImage.dmg from 
+symlink: /Users/user_dir_name/Library/Developer/Xcode/iOS DeviceSupport/6.1.x (xxx)/DeveloperDiskImage.dmg from 
 		 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/6.1 (10B141)/DeveloperDiskImage.dmg
 
-symlink: /Users/[user_dir_name]/Library/Developer/Xcode/iOS DeviceSupport/6.0.x (xxx)/DeveloperDiskImage.dmg from 
+symlink: /Users/user_dir_name/Library/Developer/Xcode/iOS DeviceSupport/6.0.x (xxx)/DeveloperDiskImage.dmg from 
 		 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/6.0/DeveloperDiskImage.dmg
 		
-symlink: /Users/[user_dir_name]/Library/Developer/Xcode/iOS DeviceSupport/5.1.x (xxx)/DeveloperDiskImage.dmg from 
+symlink: /Users/user_dir_name/Library/Developer/Xcode/iOS DeviceSupport/5.1.x (xxx)/DeveloperDiskImage.dmg from 
 		 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/5.1/DeveloperDiskImage.dmg
 
-symlink: /Users/[user_dir_name]/Library/Developer/Xcode/iOS DeviceSupport/5.0.x (xxx)/DeveloperDiskImage.dmg from 
+symlink: /Users/user_dir_name/Library/Developer/Xcode/iOS DeviceSupport/5.0.x (xxx)/DeveloperDiskImage.dmg from 
 		 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/5.0/DeveloperDiskImage.dmg
 
-symlink: /Users/[user_dir_name]/Library/Developer/Xcode/iOS DeviceSupport/4.3.x (xxx)/DeveloperDiskImage.dmg from 
+symlink: /Users/user_dir_name/Library/Developer/Xcode/iOS DeviceSupport/4.3.x (xxx)/DeveloperDiskImage.dmg from 
 		 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/4.3/DeveloperDiskImage.dmg
 
 ## Get my fork of fruitstrap (I had to patch the default path for gdb)

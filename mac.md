@@ -9,11 +9,11 @@ Frank can be used to write tests for Mac apps as well as iOS apps. Writing tests
 
 Frank can be used to test 64-bit Mac apps on OS X 10.7 and 10.8. Due to the NDA covering the pre-release builds of 10.9, testing on 10.9 is not currently supported. If you need to run tests on 10.9 before the official release, see [this thread](https://groups.google.com/forum/#!topic/frank-discuss/hugP4qelN7s).
 
-The testing machine must have access for assistive devices turned on, as described in (Getting Started)[getting_started.html].
+The testing machine must have access for assistive devices turned on, as described in [Getting Started](getting_started.html).
 
 ## Setup
 
-The steps to Frankify a Mac app are nearly identical to the (steps to Frankify an iOS app)[http://blog.thepete.net/blog/2012/06/24/writing-your-first-frank-test/]. The one difference is that you must pass a `--mac` flag to `frank build`. The `frank build` command normally compiles the app for running in a simulator. As Mac apps do not run in a simulator, the `--mac` flag will prevent Frank from trying to build your app for a simulator.
+The steps to Frankify a Mac app are nearly identical to the [steps to Frankify an iOS app](http://blog.thepete.net/blog/2012/06/24/writing-your-first-frank-test/). The one difference is that you must pass a `--mac` flag to `frank build`. The `frank build` command normally compiles the app for running in a simulator. As Mac apps do not run in a simulator, the `--mac` flag will prevent Frank from trying to build your app for a simulator.
 
 ## Labeling Views
 
