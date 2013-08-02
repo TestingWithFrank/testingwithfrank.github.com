@@ -1,7 +1,7 @@
 require 'microstatic/rake'
 
 PREVIEW_AWS_BUCKET = "preview.testingwithfrank.com"
-PRODUCTION_AWS_BUCKET = "preview.testingwithfrank.com" # NOT CONFIDENT QUITE YET
+PRODUCTION_AWS_BUCKET = "www.testingwithfrank.com"
 
 def aws_creds
   {
