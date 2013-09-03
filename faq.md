@@ -95,3 +95,14 @@ Specifically, you can add a 'run script' build step to your Xcode target's build
 
 That generates a support/bundle_path.rb file ever time you build which sets APP_BUNDLE_PATH to the location of the app bundle which XCode just built. 
 Cucumber will by default automagically import anything in that support dir, so it will load that file and make the valid_APP_BUNDLE_PATH value for Frank to use.
+
+## I'm using CocoaPods and my build is failing
+
+This shows up with one of 2 errors - a `nothing to build`, or more often something like 
+
+`ld: library not found for -lPods` and `clang: error: linker command failed with exit code 1 (use -v to see invocation)`
+
+The fix is to make sure the Pods are getting built, using `--configuration ONLY_ACTIVE_ARCH=NO`
+
+e.g. `frank build --workspace MyProject.xcworkspace --scheme MyProject --configuration ONLY_ACTIVE_ARCH=NO`
+
