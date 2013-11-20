@@ -6,13 +6,13 @@ title: Contributing
 We are always happy to accept help! We can use help with
 documentation, bug fixes and new features. 
 
-Fork the [Github Repository](http://github.com/moredip/Frank), make your
+Fork the [Github Repository](http://github.com/TestingWithFrank/Frank), make your
 changes and send a pull request.
 
 Feedback, suggestions and questions are always welcome on the [Mailing
 List](mailing_lists.html).
 
-We also track issues and feature requests [here](http://github.com/moredip/Frank/issues).
+We also track issues and feature requests [here](http://github.com/TestingWithFrank/Frank/issues).
 
 ## Building the Frank obj-c libraries locally
 Simply run `rake` from the root of the project directory. This will create a clean build of the static libraries, leaving them in the `dist` dir. To test those out locally you can manually copy them into your app's `Frank` directory (overwriting the existing libraries), and then rebuild the Frankified version of your app with `frank build`.
