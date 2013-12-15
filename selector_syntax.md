@@ -16,7 +16,8 @@ This article uses screenshots taken from Symbiote to show what views are selecte
 a view selector consists of a sequence of selection fragments, seperated by spaces. Strings can be wrapped in single or double quotes. For example all of the follwing are valid selectors:
 
 * `view`
-* `view marked:'Foo'`
+* `view marked:'Foo'` # matches values starting with 'Foo' e.g. ['Foo', 'FooBar']
+* `view markedExactly:'Foo'` # Only finds exact match of 'Foo'
 * `view marked:'Foo Bar Baz'`
 * `label marked:"I'm a label"`
 * `view:'CustomViewClass' tableViewCell view marked:'blah'`
